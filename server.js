@@ -15,9 +15,9 @@ app.get('/', (req, res) => {
   res.send('Running at root route')
 })
 
-app.get('/*', (req, res) => {
-  res.sendFile(`${__dirname}`)
-})
+// app.get('/*', (req, res) => {
+//   res.sendFile(`${__dirname}`)
+// })
 
 app.listen(PORT, () => {
   console.log(`Currently running at PORT:`, PORT)
